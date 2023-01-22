@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: 
+    background-color: ;
 }
 
 :root {
@@ -52,6 +52,77 @@ img {
 }
 
 /* ----------------- hero -----------------*/
+
+.hero {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    background-color: #2e2f42;
+} 
+
+.container {
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-left-container {
+
+}
+
+.hero-right-container {
+display: flex;
+gap: 160px;
+}
+
+.hero-title {
+    margin-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 78px;
+    color: #F3F3F3;  
+}
+
+.hero-subtitle {
+    margin-bottom: 48px;
+}
+
+.hero-btn {
+    margin-bottom: 48px;
+    padding: 20px 84px;
+    border: none;
+    border-radius: 16px;
+}
+
+.hero-list-of-details {
+    display: flex;
+    gap: 31px;
+}
+
+.hero-item-detail {
+}
+
+
+
+.hero-list-description-ingredients {
+}
+
+.hero-item-description-ingredient {
+}
+
+.hero-soc-list {
+}
+
+.hero-soc-item {
+}
+
+.hero-link {
+}
+
+.hero-icons {
+}
 
 /* ----------------- section1 -----------------*/
 
