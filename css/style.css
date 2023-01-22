@@ -1,8 +1,14 @@
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: 
 }
 
 :root {
+    --typical-first-font: 'Roboto', sans-serif;
+    --typical-second-font: 'Inter', sans-serif;
+    --typical-color-text:  #F3F3F3;
+    --typical-pasive-color: rgba(188, 26, 26, 0.2);
+    --typical-active-color: rgba(188, 26, 26, 0.5);
 }
 
 h1,
