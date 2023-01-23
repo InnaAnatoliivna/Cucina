@@ -1,90 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
-        <title>Cucina</title>
-    </head>
-    <body>
-        <header></header>
-        <main>
-            <section class="hero">
-                <div class="container hero-container">
-                    <div class="hero-left-container">
-                        <h1 class="hero-title">CUCINA DI CATHERINA</h1>
-                        <p class="hero-subtitle">
-                            We know, you will love our product
-                        </p>
-                        <button class="hero-btn btn">Buy now</button>
-                        <ul class="hero-list-of-details list">
-                            <li class="hero-item-detail">
-                                <span>14</span>
-                                <p>different tastes</p>
-                            </li>
-                            <li class="hero-item-detail">
-                                <span>31</span>
-                                <p>factories around the world</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="hero-right-container">
-                        <ul class="hero-list-description-ingredients list">
-                            <li class="hero-item-description-ingredient">ITALY TOMATOES</li>
-                            <li class="hero-item-description-ingredient">FRESH GARLIC</li>
-                            <li class="hero-item-description-ingredient">WHITE WINE</li>
-                            <li class="hero-item-description-ingredient">FRESH BASIL</li>
-                        </ul>
-                        <img src="./images/hero-1.png" alt="Pasta Sause" width="305" height="535">
-                        <ul class="hero-soc-list list">
-                            <li class="hero-soc-item">
-                                <a href="https://www.tumblr.com/" class="hero-link link">
-                                    <svg class="hero-icons" width="24" height="24">
-                                        <use href="./images/svg-icons.svg#icon-tumblr"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="hero-soc-item">
-                                <a href="https://www.instagram.com/" class="hero-link link">
-                                    <svg  class="hero-icons" width="24" height="24">
-                                        <use href="./images/svg-icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="hero-soc-item">
-                                <a href="https://www.youtube.com/" class="hero-link link">
-                                    <svg class="hero-icons" width="24" height="24">
-                                        <use href="./images/svg-icons.svg#icon-youtube"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="hero-soc-item">
-                                <a href="https://twitter.com/" class="hero-link link">
-                                    <svg class="hero-icons" width="24" height="24">
-                                        <use href="./images/svg-icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>       
-        </footer>    
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cucina</title>
+  </head>
+  <body>
+    <!-- ------------- HEADER ---------------->
+    <header class="header">
+      <div class="header-container container">
+        <nav class="header-navigation">
+          <svg class="logo-icon" width="32" height="32">
+            <use href="./images/svg-icons.svg#icon-logo-icon"></use>
+          </svg>
+          <a href="" class="header-logo link">Cucina</a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="" class="header-link link current">Home</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Store</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Recipes</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header-button btn" type="button">Contact us</button>
+      </div>
+    </header>
+    <main>
+      <!------------HERO ------------------->
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-left-container">
+            <h1 class="hero-title">CUCINA DI CATHERINA</h1>
+            <p class="hero-subtitle">We know, you will love our product</p>
+            <button class="hero-btn btn">Buy now</button>
+            <ul class="hero-list-of-details list">
+              <li class="hero-item-detail">
+                <span>14</span>
+                <p>different tastes</p>
+              </li>
+              <li class="hero-item-detail">
+                <span>31</span>
+                <p>factories around the world</p>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right-container">
+            <ul class="hero-list-description-ingredients list">
+              <li class="hero-item-description-ingredient">ITALY TOMATOES</li>
+              <li class="hero-item-description-ingredient">FRESH GARLIC</li>
+              <li class="hero-item-description-ingredient">WHITE WINE</li>
+              <li class="hero-item-description-ingredient">FRESH BASIL</li>
+            </ul>
+            <img
+              src="./images/hero-1.png"
+              alt="Pasta Sause"
+              width="305"
+              height="535"
+            />
+            <ul class="hero-soc-list list">
+              <li class="hero-soc-item">
+                <a href="https://www.tumblr.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-tumblr"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-soc-item">
+                <a href="https://www.instagram.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-soc-item">
+                <a href="https://www.youtube.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-soc-item">
+                <a href="https://twitter.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
