@@ -56,6 +56,7 @@ img {
 /* ------------- HEADER --------------*/
 
 .header {
+  border-bottom: 3px solid #100F0F;
   background: linear-gradient(
     256.51deg,
     rgba(111, 102, 102, 0.9) 26.96%,
@@ -72,6 +73,7 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
+    
 }
 .logo-icon {
   fill: var(--typical-color-text);
