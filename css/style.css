@@ -274,6 +274,9 @@ img {
   fill: var(--typical-color-text);
 }
 
+.hero-icons:is(:hover, :focus) {
+  fill: var(--typical-active-color);
+}
 /* ----------------- section menu -----------------*/
 
 
