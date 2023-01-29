@@ -292,11 +292,11 @@ img {
 .hero-icons:is(:hover, :focus) {
   fill: var(--typical-active-color);
 }
-/* ----------------- section menu -----------------*/
+/* ----------------- sauces first -----------------*/
 
 
 
-/* ----------------- section2 -----------------*/
+/* ----------------- sauces second -----------------*/
 .sauses-second {
 }
 .sauses-second-list {
@@ -331,8 +331,8 @@ img {
 .sauses-second-btn:is(:hover, :focus) {
   background-color: var(--typical-active-color);
 }
-/* ----------------- section3 -----------------*/
+/* ----------------- video -----------------*/
 
-/* ----------------- section4 -----------------*/
+/* ----------------- slider -----------------*/
 
 /* ----------------- footer -----------------*/
