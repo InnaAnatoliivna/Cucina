@@ -58,6 +58,18 @@ img {
   outline: 1px solid red;
 }
 
+.visually-hidden {
+  white-space: nowrap;
+  position: absolute;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  width: 1px;
+}
 /* ------------- HEADER --------------*/
 
 .header {
@@ -285,7 +297,40 @@ img {
 
 
 /* ----------------- section2 -----------------*/
-
+.sauses-second {
+}
+.sauses-second-list {
+}
+.sauses-second-item {
+  display: flex;
+}
+.sauses-second-img {
+}
+.sauses-second-wrap {
+}
+.sauses-second-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.22;
+  color: var(--typical-color-text);
+}
+.sauses-second-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--typical-color-text);
+}
+.sauses-second-btn {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--typical-color-text);
+  background-color: var(--typical-pasive-color);
+  border-radius: 8px;
+  padding: 10px 50px;
+}
+.sauses-second-btn:is(:hover, :focus) {
+  background-color: var(--typical-active-color);
+}
 /* ----------------- section3 -----------------*/
 
 /* ----------------- section4 -----------------*/
