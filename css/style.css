@@ -292,11 +292,11 @@ img {
 .hero-icons:is(:hover, :focus) {
   fill: var(--typical-active-color);
 }
-/* ----------------- section menu -----------------*/
+/* ----------------- sauces first -----------------*/
 
 
 
-/* ----------------- section2 -----------------*/
+/* ----------------- sauces second -----------------*/
 .sauses-second {
 }
 .sauses-second-list {
@@ -331,9 +331,11 @@ img {
 .sauses-second-btn:is(:hover, :focus) {
   background-color: var(--typical-active-color);
 }
-/* ----------------- section3 -----------------*/
+/* ----------------- video -----------------*/
 
 /* ----------------- section4 -----------------*/
+
+/* ----------------- slider -----------------*/
 .input-slade {
   display: block;
   height: 504px;
@@ -453,5 +455,4 @@ img {
   -o-transform: scale(1);
   transform: scale(1);
 }
-
 /* ----------------- footer -----------------*/
