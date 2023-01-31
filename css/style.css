@@ -503,8 +503,7 @@ img {
   fill: white;
   border-radius: 0;
   border: 0;
-
-  cursor: pointer;
+} 
 
 .button-svg{
   margin: 0;
