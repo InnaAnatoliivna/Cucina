@@ -374,6 +374,7 @@ img {
   height: 504px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0%;
   position: relative;
   /* width: 1038px; */
 }
@@ -384,6 +385,8 @@ img {
   position: relative;
   width: 1038px;
   height: 504px;
+  margin-left: auto;
+  margin-right: auto;
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -395,6 +398,8 @@ img {
   height: inherit;
   position: absolute;
   width: inherit;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slide1 {
@@ -487,5 +492,50 @@ img {
   -moz-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+}
+
+.btn{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  box-shadow: none;
+  fill: white;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+}
+.button-svg{
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+.btn-icon{
+    margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 23px;
+}
+.button-right{
+  content: '';
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: -34px;
+  transform:rotate(180deg);
+}
+.button-left{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 1042px;
+}
+.button-right:is(:hover,:focus){
+fill: grey;
+}
+.button-left:is(:hover,:focus){
+fill: grey;
 }
 /* ----------------- footer -----------------*/
