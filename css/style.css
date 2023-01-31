@@ -458,7 +458,7 @@ img {
   -o-transform: scale(1);
   transform: scale(1);
 }
-.btn{
+.btn-slider{
   position: relative;
   width: 32px;
   height: 32px;
@@ -467,7 +467,6 @@ img {
   fill: white;
   border-radius: 0;
   border: 0;
-  cursor: pointer;
 }
 .button-svg{
   margin: 0;
@@ -487,14 +486,15 @@ img {
   margin: 0;
   padding: 0;
   top: 50%;
-  left: -34px;
+  left: 0px;
   transform:rotate(180deg);
+  border: 5px solid white;
 }
 .button-left{
   content: '';
   position: absolute;
   top: 50%;
-  left: 1042px;
+  right: 0px;
 }
 .button-right:is(:hover,:focus){
 fill: grey;
