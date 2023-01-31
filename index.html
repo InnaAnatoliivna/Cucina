@@ -177,23 +177,33 @@
         </div>
       </section>
     <!----------- slider ------------>
-    <section class="slider">
-      <div class="container input-slade">
-        <input type="radio" name="point" id="slide1" checked />
-        <input type="radio" name="point" id="slide2" />
-        <input type="radio" name="point" id="slide3" />
-        <div class="sliders">
-          <div class="slides slide1"></div>
-          <div class="slides slide2"></div>
-          <div class="slides slide3"></div>
+      <section class="slider">
+        <div class="container input-slade">
+          <input type="radio" name="point" id="slide1" checked />
+          <input type="radio" name="point" id="slide2" />
+          <input type="radio" name="point" id="slide3" />
+          <div class="sliders">
+            <div class="slides slide1"></div>
+            <div class="slides slide2"></div>
+            <div class="slides slide3"></div>
+          </div>
+          <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+          <button class="button-right btn" onclick="this.classList.toggle('one')">
+            <svg class="button-svg">
+              <use class="btn-icon" href="./images/symbol-defs.svg#icon-ep_arrow-right"></use>
+            </svg>
+          </button>
+          <button class="button-left btn" type="button">
+            <svg class="button-svg">
+              <use class="btn-icon" href="./images/symbol-defs.svg#icon-ep_arrow-right"></use>
+            </svg>
+          </button>
         </div>
-        <div class="controls">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
-      </div>
-    </section>
+      </section>
     </main>
     <!----------- footer ----------->
     <footer>     
