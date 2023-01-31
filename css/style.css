@@ -158,7 +158,7 @@ img {
 }
 
 .hero-container {
-  display: flex;  
+  display: flex;
   align-items: center;
 }
 
@@ -292,12 +292,14 @@ img {
 .hero-icons:is(:hover, :focus) {
   fill: var(--typical-active-color);
 }
-/* ----------------- section menu -----------------*/
+/* ----------------- sauces first -----------------*/
 
 
-
-/* ----------------- section2 -----------------*/
+/* ----------------- sauces second -----------------*/
 .sauses-second {
+}
+.sauses-second-container {
+  padding: 120px 90px;
 }
 .sauses-second-list {
 }
@@ -305,35 +307,68 @@ img {
   display: flex;
 }
 .sauses-second-img {
+  display: block;
+  border-radius: 291px;
+  width: 349px;
+  height: 349px;
+  filter: drop-shadow(0px 0px 50px #7c7070);
+  background-image: url(../images/ketchup-or-tomato-sauce.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sauses-second-img:nth-child(2) {
+  background-image: url(../images/red-hot-chilli-sauce.jpg);
+  margin-left: 90px;
 }
 .sauses-second-wrap {
+  padding-top: 75px;
+  padding-left: 90px;
 }
 .sauses-second-title {
-  font-weight: 600;
   font-size: 32px;
   line-height: 1.22;
   color: var(--typical-color-text);
+  display: block;
+  margin-bottom: 16px;
 }
 .sauses-second-desc {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: var(--typical-color-text);
+  margin-bottom: 20px;
+  width: 406px;
 }
 .sauses-second-btn {
   font-size: 20px;
   line-height: 1.2;
   color: var(--typical-color-text);
   background-color: var(--typical-pasive-color);
+  border-color: transparent;
   border-radius: 8px;
   padding: 10px 50px;
 }
 .sauses-second-btn:is(:hover, :focus) {
   background-color: var(--typical-active-color);
 }
-/* ----------------- section3 -----------------*/
 
-/* ----------------- section4 -----------------*/
+.sauses-second-up-down {
+  background-color: var(--typical-first-font);
+  border: transparent;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 23px;
+}
+.sauses-second-up-down-icon {
+  fill: var(--typical-color-text);
+}
+
+
+/* ----------------- video -----------------*/
+
+
+/* ----------------- slider -----------------*/
 .input-slade {
   display: block;
   height: 504px;
@@ -341,7 +376,7 @@ img {
   margin-right: auto;
   padding: 0%;
   position: relative;
-  width: 1038px;
+  /* width: 1038px; */
 }
 
 .sliders {
@@ -458,6 +493,7 @@ img {
   -o-transform: scale(1);
   transform: scale(1);
 }
+
 .btn-slider{
   position: relative;
   width: 32px;
@@ -467,7 +503,9 @@ img {
   fill: white;
   border-radius: 0;
   border: 0;
-}
+
+  cursor: pointer;
+
 .button-svg{
   margin: 0;
   padding: 0;
