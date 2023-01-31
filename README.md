@@ -8,7 +8,7 @@ Hero.html-Inna Anatoliivna /
 
 Sauces.first.html-Katerina-KEA / 
 
-Sauses.second.html-IraKostenko / 
+Sauсes.second.html-IraKostenko / 
 
 Video.html- - / 
 
