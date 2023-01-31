@@ -505,18 +505,6 @@ img {
   border: 0;
 } 
 
-.button-svg{
-  margin: 0;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-}
-.btn-icon{
-    margin: 0;
-  padding: 0;
-  width: 12px;
-  height: 23px;
-}
 .button-right{
   content: '';
   position: absolute;
@@ -525,18 +513,34 @@ img {
   top: 50%;
   left: 0px;
   transform:rotate(180deg);
-  border: 5px solid white;
+  /* border: 5px solid white; */
 }
+
 .button-left{
   content: '';
   position: absolute;
   top: 50%;
   right: 0px;
 }
+
 .button-right:is(:hover,:focus){
-fill: grey;
+  fill: grey;
 }
+
 .button-left:is(:hover,:focus){
-fill: grey;
+  fill: grey;
+}
+
+.button-svg{
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+.btn-icon{
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 23px;
 }
 /* ----------------- footer -----------------*/
