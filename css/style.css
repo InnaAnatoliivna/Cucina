@@ -296,17 +296,17 @@ img {
 
 
 /* ----------------- sauces second -----------------*/
-.sauses-second {
+.sauces-second {
 }
-.sauses-second-container {
+.sauces-second-container {
   padding: 120px 90px;
 }
-.sauses-second-list {
+.sauces-second-list {
 }
-.sauses-second-item {
+.sauces-second-item {
   display: flex;
 }
-.sauses-second-img {
+.sauces-second-img {
   display: block;
   border-radius: 291px;
   width: 349px;
@@ -317,29 +317,29 @@ img {
   background-position: center;
   background-size: cover;
 }
-.sauses-second-img:nth-child(2) {
+.sauces-second-img:nth-child(2) {
   background-image: url(../images/red-hot-chilli-sauce.jpg);
   margin-left: 90px;
 }
-.sauses-second-wrap {
+.sauces-second-wrap {
   padding-top: 75px;
   padding-left: 90px;
 }
-.sauses-second-title {
+.sauces-second-title {
   font-size: 32px;
   line-height: 1.22;
   color: var(--typical-color-text);
   display: block;
   margin-bottom: 16px;
 }
-.sauses-second-desc {
+.sauces-second-desc {
   font-size: 16px;
   line-height: 1.25;
   color: var(--typical-color-text);
   margin-bottom: 20px;
   width: 406px;
 }
-.sauses-second-btn {
+.sauces-second-btn {
   font-size: 20px;
   line-height: 1.2;
   color: var(--typical-color-text);
@@ -348,11 +348,11 @@ img {
   border-radius: 8px;
   padding: 10px 50px;
 }
-.sauses-second-btn:is(:hover, :focus) {
+.sauces-second-btn:is(:hover, :focus) {
   background-color: var(--typical-active-color);
 }
 
-.sauses-second-up-down {
+.sauces-second-up-down {
   background-color: var(--typical-first-font);
   border: transparent;
   display: flex;
@@ -360,7 +360,7 @@ img {
   align-items: center;
   min-height: 23px;
 }
-.sauses-second-up-down-icon {
+.sauces-second-up-down-icon {
   fill: var(--typical-color-text);
 }
 
