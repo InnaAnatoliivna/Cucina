@@ -7,22 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <footer>       
-        <img src="./images/sprite.svg#icon-logo" alt="CUCINA">CUCINA</a>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Store</a></li>
-            <li><a href="">Recipes</a></li>
-            <li><a href="">Gallery</a></li>
-        </ul>
-    </nav>        
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+            <nav class="footer-navigation">
+                <svg class="logo-icon" width="32" height="32">
+                    <use href="./images/sprite.svg#icon-logo"></use></svg>
+                    <a href="" class="footer-logo link">CUCINA</a>
+                <ul class="header-list list">
+                    <li class="header-item"><a href="" class="header-link link current">Home</a></li>
+                    <li class="header-item"><a href="" class="header-link link">Store</a></li>
+                    <li class="header-item"><a href="" class="header-link link">Recipes</a></li>
+                    <li class="header-item"><a href="" class="header-link link">Gallery</a></li>
+                </ul>
+            </nav>
+        </div> 
+        <div>       
         <address>
             Elvia Elviaveien 1, 1234 Oslo
         </address>
         <address>
             <a href="mailto:willie.jennings@example.com">willie.jennings@example.com</a>
         </address>
+        </div>
+            <div>
             <ul>
                 <li class="footer-list-soc-item">
                     <a href="" class="footer-item-soc-link link">
@@ -44,8 +52,10 @@
                     <svg class="footer-item-soc-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-twetter"></use>
                     </svg></a></li>
-          </ul>
+            </ul>
+            </div>
           <p>By using this website, you agree to the <b>Terms of Service</b> and <b>Privacy Policy</b></p>                    
+        </div>
     </footer>    
 </body>
 </html>
