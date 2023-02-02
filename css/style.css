@@ -167,8 +167,16 @@ img {
 }
 
 .hero-right-container {
+  position: relative;
   display: flex;
   justify-content: end;
+}
+
+.hero-icon-img {
+  position: absolute;
+  right: 114%;
+  top: 66%;
+  fill: rgba(188, 26, 26, 0.8);
 }
 
 .hero-title {
