@@ -556,8 +556,7 @@ img {
   padding-top: 24px;
   /* background: #C9C9C9; */
 }
-.container {
-}
+
 .footer-container {
   display: flex;
   align-items: center;
@@ -569,7 +568,7 @@ img {
 }
 .footer-navigation {
 }
-.logo-icon {
+.footer-logo-icon {
   fill: #F3F3F3;
   margin-top: 64px;
   margin-left: 85px;
@@ -577,7 +576,7 @@ img {
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-icon:is(:hover, :focus) {
+.footer-logo-icon:is(:hover, :focus) {
   fill: rgba(188, 26, 26, 0.5);
 }
 .footer-logo {
