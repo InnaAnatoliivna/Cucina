@@ -126,13 +126,13 @@ img {
 }
 
 .header-link {
-   font-weight: 600;
-   font-size: 16px;
-   line-height: calc(20 / 16);
-   color: var(--typical-color-text);
-   padding-top: 33px;
-   padding-bottom: 27px;
-   transition: color var(--transition-duration) var(--transition-timing-function);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--typical-color-text);
+  padding-top: 33px;
+  padding-bottom: 27px;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-link:is(:hover, :focus) {
@@ -300,10 +300,9 @@ img {
 }
 
 .hero-icons {
-
   fill: var(--typical-color-text);
   transition: fill var(--transition-duration) var(--transition-timing-function);
-
+}
 .hero-icons:is(:hover, :focus) {
   fill: var(--typical-active-color);
 }
@@ -406,9 +405,11 @@ img {
   -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 .input-slade > input {
   display: none;
 }
+
 .slides {
   height: inherit;
   position: absolute;
@@ -531,18 +532,18 @@ img {
   /* border: 5px solid white; */
 }
 
-.button-left{
+.button-left {
   content: '';
   position: absolute;
   top: 50%;
   right: 0px;
 }
 
-.button-right:is(:hover,:focus){
+.button-right:is(:hover,:focus) {
   fill: grey;
 }
 
-.button-left:is(:hover,:focus){
+.button-left:is(:hover,:focus) {
   fill: grey;
 }
 
