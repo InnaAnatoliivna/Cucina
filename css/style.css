@@ -15,6 +15,10 @@ body {
   --typical-color-text: #f3f3f3;
   --typical-pasive-color: rgba(188, 26, 26, 0.2);
   --typical-active-color: rgba(188, 26, 26, 0.5);
+  --backdrop-background-color: #C9C9C9;
+  --modal-background-color: #100F0F;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -95,6 +99,7 @@ img {
   fill: var(--typical-color-text);
   margin-right: 16px;
   cursor: pointer;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .logo-icon:is(:hover, :focus) {
@@ -121,12 +126,13 @@ img {
 }
 
 .header-link {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  color: var(--typical-color-text);
-  padding-top: 33px;
-  padding-bottom: 27px;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: calc(20 / 16);
+   color: var(--typical-color-text);
+   padding-top: 33px;
+   padding-bottom: 27px;
+   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-link:is(:hover, :focus) {
@@ -143,6 +149,7 @@ img {
   border-radius: 16px;
   background-color: transparent;
   padding: 10px 33px;
+  transition: color var(--transition-duration) var(--transition-timing-function), border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-button:is(:hover, :focus) {
@@ -212,7 +219,7 @@ img {
   border: none;
   border-radius: 16px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 
   font-weight: 500;
   font-size: 30px;
@@ -293,9 +300,9 @@ img {
 }
 
 .hero-icons {
+
   fill: var(--typical-color-text);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 
 .hero-icons:is(:hover, :focus) {
   fill: var(--typical-active-color);
@@ -574,8 +581,9 @@ img {
   margin-left: 85px;
   margin-right: 16px;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  }
+  
 .footer-logo-icon:is(:hover, :focus) {
   fill: rgba(188, 26, 26, 0.5);
 }
@@ -586,7 +594,7 @@ img {
   line-height: 1.2;
   color: #F3F3F3;
   font-style: normal;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .footer-logo:is(:hover, :focus) {
   color: var(--typical-active-color);
@@ -614,7 +622,7 @@ img {
   margin-top: 24px;
   margin-left: 157px; 
   margin-right: 173px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .footer-link:is(:hover, :focus) {
   color: var(--typical-active-color);
@@ -631,7 +639,7 @@ img {
 }
 .footer-address-icon {
   fill: #F3F3F3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-address-icon:is(:hover, :focus) {
@@ -644,7 +652,7 @@ img {
   line-height: 1.19;
   color: #F3F3F3;
   font-style: normal; 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-address:is(:hover, :focus) {
@@ -674,7 +682,7 @@ img {
 }
 .footer-soc-icon {
   fill: #F3F3F3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
   margin-left: 218px;
 }
 .footer-soc-icon:is(:hover, :focus) {
@@ -689,3 +697,60 @@ img {
   font-style: normal;
   margin-left: 405px;
 }
+
+  
+/* ------------MODAL WINDOW ----------------*/
+/* .backdrop {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop-background-color);
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: absolute;
+  z-index: 100;
+  min-height: 756px;
+  width: 530px;
+  padding:
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: var(--modal-background-color);
+  border-radius: 16px;
+  opacity: 1;
+
+}
+ .backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.75);
+ }
+
+ .modal-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  background-color: var(--modal-background-color);
+  border: none;
+  
+ }
+
+ .modal-close-button:is(:hover, :focus) {
+  background-color: var(--typical-active-color); not sure
+ }
+
+ .modal-close-button-icon {
+  fill: var(--typical-color-text);
+ }
+
+ .modal-close-button:hover .modal-close-button-icon,
+ .modal-close-button:focus .modal-close-button-icon {
+  fill: var(--typical-active-color); - not sure
+ } */
