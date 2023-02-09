@@ -565,6 +565,13 @@ img {
   /* background: #C9C9C9; */
 }
 
+.line {
+  position: relative;
+  margin: 0 -85px;
+  width: 1280px;
+  border: 1px solid #F3F3F3;
+}
+
 .footer-container {
   display: flex;
   align-items: center;
@@ -574,14 +581,17 @@ img {
   display: flex;
   align-items: center;
   margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 35px;
 }
 .footer-navigation {
   display: flex;
   align-items: center;
 }
+
 .footer-logo-icon {
   fill: #F3F3F3;
-  margin-top: 64px;
+  /* margin-top: 64px; */
   margin-left: 85px;
   margin-right: 16px;
   cursor: pointer;
@@ -592,6 +602,8 @@ img {
   fill: rgba(188, 26, 26, 0.5);
 }
 .footer-logo {
+  display: flex;
+  align-items: center;
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 20px;
@@ -609,11 +621,12 @@ img {
   display: block;
   align-items: center;
   margin-right: auto;
+  margin-top: 24px;  
 }
 .list {
 }
 .footer-item {
-  
+  margin-bottom: 20px;
 }
 .footer-link {
   font-family: 'Inter';
@@ -636,10 +649,11 @@ img {
 .address {
 }
 .footer-address-list {
-  
+  margin-top: 46px;
 }
 .footer-address-item {
   display: flex;
+  margin-bottom: 45px;
 }
 .footer-address-link {
 }
@@ -657,7 +671,9 @@ img {
   font-size: 16px;
   line-height: 1.19;
   color: #F3F3F3;
-  font-style: normal; 
+
+  font-style: normal;
+  margin-left: 16px; 
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -672,6 +688,7 @@ img {
   line-height: 1.19;
   color: #F3F3F3;
   font-style: normal;
+  margin-left: 9px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -679,10 +696,16 @@ img {
   color: var(--typical-active-color);
 }
 
-.footer-soc-list {
+.soc-container {
+  margin-right: 180px;
+}
+
+.footer-soc-list {  
+  margin-top: 24px;
   /* display: flex; */
 }
 .footer-soc-item {
+  margin-bottom: 16px;
 }
 .footer-soc-link {
   /* fill: #F3F3F3; */
@@ -691,6 +714,7 @@ img {
   fill: #F3F3F3;
   transition: fill var(--transition-duration) var(--transition-timing-function);
   margin-left: 218px;
+  
 }
 .footer-soc-icon:is(:hover, :focus) {
   fill: var(--typical-active-color);
@@ -702,7 +726,9 @@ img {
   line-height: 1.21;
   color: #979797;
   font-style: normal;
-  margin-left: 405px;
+  
+  margin-left: 320px;
+  /* margin-right: 410px; */
 }
 
   
