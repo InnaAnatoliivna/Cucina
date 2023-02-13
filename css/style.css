@@ -14,7 +14,8 @@ body {
   --typical-second-font: "Inter", sans-serif;
   --typical-color-text: #f3f3f3;
   --typical-pasive-color: rgba(188, 26, 26, 0.2);
-  --typical-active-color: rgba(188, 26, 26, 0.5);
+  --typical-active-color: rgba(188, 26, 26, 0.786);
+  --btn-bc:  #f3f3f3b9;
   --backdrop-background-color: #C9C9C9;
   --modal-background-color: #100F0F;
   --transition-duration: 250ms;
@@ -290,22 +291,41 @@ img {
 }
 
 .hero-soc-item {
-  width: 24px;
-  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+
 }
 
 .hero-link {
   width: 100%;
   height: 100%;
+  padding: 9px;
+  border-radius: 16px;
+  border: 1px solid var(--typical-color-text);
+  color: var(--typical-color-text);
+  background-color: transparent;
+  transition: 
+    color var(--transition-duration) var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.hero-link:is(:hover, :focus) {
+  color: var(--typical-active-color);
+  border-color: var(--typical-active-color);
+  background-color:  var(--btn-bc);
 }
 
 .hero-icons {
-  fill: var(--typical-color-text);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  fill: currentColor;
+  /* transition: fill var(--transition-duration) var(--transition-timing-function); */
 }
-.hero-icons:is(:hover, :focus) {
+/* .hero-icons:is(:hover, :focus) {
   fill: var(--typical-active-color);
-}
+} */
 /* ----------------- sauces first -----------------*/
 
 
