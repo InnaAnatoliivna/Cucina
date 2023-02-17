@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cucina</title>
+  </head>
+  <body>
+    <!-- ------------- HEADER ---------------->
+    <header class="header">
+      <div class="header-container container">
+        <nav class="header-navigation">
+          <svg class="logo-icon" width="32" height="32">
+            <use href="./images/svg-icons.svg#icon-logo-icon"></use>
+          </svg>
+          <a href="" class="header-logo link">Cucina</a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="" class="header-link link current">Home</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Store</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Recipes</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header-button btn" type="button">Contact us</button>
+      </div>
+    </header>
+    <main>
+      <!------------HERO ------------------->
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-left-container">
+            <h1 class="hero-title">CUCINA DI CATHERINA</h1>
+            <p class="hero-subtitle">
+              We know,<br />
+              you will <span class="hero-wrap">love</span> our product
+            </p>
+            <button type="button" class="hero-btn btn">Buy now</button>
+            <ul class="hero-list-of-details list">
+              <li class="hero-item-detail">
+                <span class="hero-wrap-numbers">14</span>
+                <p class="hero-detail-text">different tastes</p>
+              </li>
+              <li class="hero-item-detail hero-wrap">
+                <span class="hero-wrap-numbers">31</span>
+                <p class="hero-detail-text">factories around the world</p>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right-container">
+            <img class="hero-img"
+              src="./images/hero.png"
+              alt="Pasta Sause"
+              width="432"
+              height="577"
+            />
+            <svg class="hero-icon-img" width="6" height="6">
+              <use href="./images/svg-icons.svg#icon-circle"></use>
+            </svg>
+            <ul class="hero-soc-list list">
+              <li class="hero-soc-item">
+                <a href="https://www.tumblr.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-tumblr"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-soc-item">
+                <a href="https://www.instagram.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-soc-item">
+                <a href="https://www.youtube.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-soc-item">
+                <a href="https://twitter.com/" class="hero-link link">
+                  <svg class="hero-icons" width="24" height="24">
+                    <use href="./images/svg-icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--------- section sauces first ---------->
+      <section class="sauces-section">
+        <ul class="sauces-list">
+          <li class="sauces-item">
+            <img src="./images/tomatoes.jpg" alt="tomatoеs" width="349"/>
+            <h2 class="sauces-subtitle">Spicy sauce</h2>
+            <p class="sauces-text">
+              For thrill-seekers, we added hot chili pepper to our sauce, it also
+              reveals all the tastes and aromas of the sauce well.
+            </p>
+            <button type="button" class="sauces-button">Buy now</button>
+          </li>
+          <li class="sauces-item">
+            <img src="./images/pappers.jpg" alt="pappers" width="349"/>
+            <h2 class="sauces-subtitle">Classic sauce</h2>
+            <p class="sauces-text">
+              The most delicate taste of tomatoes, combined with branded spices
+              and white wine, will make your dish incredibly tasty.
+            </p>
+            <button type="button" class="sauces-button">Buy now</button>
+          </li>
+        </ul>
+      </section> 
+      <!--------- section sauces second --------->
+      <section class="sauces-second">
+        <div class="container sauces-second-container">
+          <h2 class="visually-hidden">Menu</h2>
+          <button type="button" class="sauces-second-up-down btn">
+            <svg class="sauces-second-up-down-icon" width="23" height="12">
+              <use href="./images/sprite-btn.svg#icon-up"></use>
+            </svg>
+          </button>
+          <ul class="sauses-second-list list">
+            <li class="sauces-second-item">
+              <div class="sauces-second-img"></div>
+              <div class="sauces-second-wrap">
+                <h3 class="sauces-second-title">Classic sauce</h3>
+                <p class="sauces-second-desc">
+                  The most delicate taste of tomatoes, combined with branded
+                  spices and white wine, will make your dish incredibly tasty.
+                </p>
+                <button class="sauces-second-btn btn" type="button">
+                  Buy now
+                </button>
+              </div>
+            </li>
+            <li class="sauces-second-item">
+              <div class="sauces-second-wrap">
+                <h3 class="sauces-second-title">Spicy sauce</h3>
+                <p class="sauces-second-desc">
+                  For thrill-seekers, we added hot chili pepper to our sauce, it
+                  also reveals all the tastes and aromas of the sauce well.
+                </p>
+                <button class="sauces-second-btn btn" type="button">
+                  Buy now
+                </button>
+              </div>
+              <div class="sauces-second-img"></div>
+            </li>
+          </ul>
+          <button type="button" class="sauces-second-up-down btn">
+            <svg class="sauces-second-up-down-icon" width="23" height="12">
+              <use href="./images/sprite-btn.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    <!----------- slider ------------>
+    <section class="slider">
+      <div class="container input-slade">
+        <input type="radio" name="point" id="slide1" checked />
+        <input type="radio" name="point" id="slide2" />
+        <input type="radio" name="point" id="slide3" />
+        <div class="sliders">
+          <div class="slides slide1"></div>
+          <div class="slides slide2"></div>
+          <div class="slides slide3"></div>
+        </div>
+        <div class="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+        <button class="button-right btn btn-slider" onclick="this.classList.toggle('one')">
+          <svg class="button-svg">
+            <use class="btn-icon" href="./images/symbol-defs.svg#icon-ep_arrow-right"></use>
+          </svg>
+        </button>
+        <button class="button-left btn btn-slider" type="button">
+          <svg class="button-svg">
+            <use class="btn-icon" href="./images/symbol-defs.svg#icon-ep_arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    </main>
+    <!----------- footer ----------->
+    <footer class="footer">
+      <div class="container footer-container">
+          <div class="footer-navigation-container">
+              <nav class="footer-navigation">
+                  <svg class="footer-logo-icon" width="32" height="32">
+                      <use href="./images/sprite.svg#icon-logo"></use></svg>
+                      <a href="" class="footer-logo link">CUCINA</a>
+                  <ul class="footer-list list">
+                      <li class="footer-item"><a href="" class="footer-link link">Home</a></li>
+                      <li class="footer-item"><a href="" class="footer-link link">Store</a></li>
+                      <li class="footer-item"><a href="" class="footer-link link">Recipes</a></li>
+                      <li class="footer-item"><a href="" class="footer-link link">Gallery</a></li>
+                  </ul>
+              </nav>
+          </div> 
+          <div class="address-container">                     
+              <address class="address">
+                  <ul class="footer-address-list list">
+                      <li class="footer-address-item">
+                          <a href="" class="footer-address-link link">
+                          <svg class="footer-address-icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-location"></use></svg></a>
+                          <p class="footer-address">Elvia Elviaveien 1, 1234 Oslo</p></li>
+                      <li class="footer-address-item">
+                          <a href="" class="footer-address-link link">
+                          <svg class="footer-address-icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-email"></use></svg></a>
+                          <a href="mailto:willie.jennings@example.com" class="footer-mail link">willie.jennings@example.com</a></li>
+                  </ul>                    
+              </address>
+          </div>
+          <div>
+              <ul class="footer-soc-list list">
+                  <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                      <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-telegram"></use>
+                      </svg></a></li>
+                  <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                      <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg></a></li>
+                  <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                      <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-youtube"></use>
+                      </svg></a></li>
+                  <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                      <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-twetter"></use>
+                      </svg></a></li>
+              </ul>
+          </div>
+          <p class="footer-text">By using this website, you agree to the <b>Terms of Service</b> and <b>Privacy Policy</b></p>                    
+      </div>
+  </footer> 
+
+  <!------- MODAL WINDOW ------>
+
+<script src="./js/modal.js"></script>
+  </body>
+</html>
