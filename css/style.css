@@ -407,20 +407,11 @@ img {
 }
 
 /* ----------------- video -----------------*/
-.video {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 93px;
-  outline: 1px solid #ffffff;
-}
 
 .container-video {
   width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 93px;
 }
 
 .video-container {
@@ -443,11 +434,10 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.video-icon {
-}
 
 .video-list {
   display: flex;
+  justify-content: center;
   list-style: none;
 }
 
