@@ -23,31 +23,54 @@
   <body>
     <!-- ------------- HEADER ---------------->
     <header class="header">
-      <div class="header-container container">
-        <nav class="header-navigation">
-          <svg class="logo-icon" width="32" height="32">
-            <use href="./images/svg-icons.svg#icon-logo-icon"></use>
-          </svg>
-          <a href="" class="header-logo link">Cucina</a>
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="" class="header-link link current">Home</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Store</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Recipes</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Gallery</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header-button btn" type="button">Contact us</button>
-      </div>
-    </header>
-    <main>
+        <div class="header-container container">
+          <div class="logo-box">
+                <svg class="logo-icon" width="32" height="32">
+                    <use href="./images/svg-icons.svg#icon-logo-icon"></use>
+                  </svg>
+                  <a href="" class="header-logo link">Cucina</a>
+          </div>
+          <nav class="header-navigation">
+            <ul class="header-list list">
+              <li class="header-item">
+                <a href="" class="header-link link current">Home</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Store</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Recipes</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Gallery</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-button btn" type="button">Contact us</button>
+          <button type="button" class="burger js-open-menu"><img class="burger-img" src="./images/icon-humburger.png" alt="./burger-menu"></button>
+        </div>
+        <div class="modal js-menu-container">      
+            <div class="container">
+              <div class="mod-box-1">
+                <div class="logo-box">
+                  <a href=""><img src="./images/icon-logo.svg" alt=""></a>
+                  <a class="icon-logo-mod link" href="">CUCINA</a>
+                </div>
+                <button class="close-btn js-close-menu" type="button"><a href=""><img src="./images/icon-close.svg" alt=""></a></button>
+              </div>          
+              <div class="mod-nav-box">
+                <ul class="mod-nav-list">
+                  <li class="item"><a class="nav-mod-name" href="">Home</a></li>
+                  <li class="item"><a class="nav-mod-name" href="">Store</a></li>
+                  <li class="item"><a class="nav-mod-name" href="">Recipes</a></li>
+                  <li class="item"><a class="nav-mod-name" href="">Gallery</a></li>
+                </ul>
+              </div>
+              <button class="mod-btn" type="button">Contact us</button>
+            </div>
+        </div>
+      </header>
+      <main>
       <!------------HERO ------------------->
       <section class="hero">
         <div class="container hero-container">
@@ -287,15 +310,13 @@
               <li class="footer-address-item">
                 <a href="" class="footer-address-link link">
                   <svg class="footer-address-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-location"></use></svg
-                ></a>
+                    <use href="./images/sprite.svg#icon-location"></use></svg></a>
                 <p class="footer-address">Elvia Elviaveien 1, 1234 Oslo</p>
               </li>
               <li class="footer-address-item">
                 <a href="" class="footer-address-link link">
                   <svg class="footer-address-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-email"></use></svg
-                ></a>
+                    <use href="./images/sprite.svg#icon-email"></use></svg></a>
                 <a
                   href="mailto:willie.jennings@example.com"
                   class="footer-mail link"
@@ -310,26 +331,22 @@
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
                 <svg class="footer-soc-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-telegram"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-telegram"></use></svg></a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
                 <svg class="footer-soc-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-instagram"></use></svg></a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
                 <svg class="footer-soc-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-youtube"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-youtube"></use></svg></a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
                 <svg class="footer-soc-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-twetter"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#icon-twetter"></use></svg></a>
             </li>
           </ul>
         </div>
@@ -341,7 +358,17 @@
     </footer>
 
     <!------- MODAL WINDOW ------>
+        <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+        <svg class="modal-close-button-icon" width="17" height="17">
+            <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+        </button>
+        <p class="modal-title header-title">Leave your contacts and we will call you back</p>
+        <form action="#" class="modal-form">
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
